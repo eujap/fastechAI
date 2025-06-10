@@ -26,7 +26,7 @@ O agente coleta de forma amigável as seguintes informações:
 - Python 3.12+
 - [Google ADK](https://google.github.io/adk-docs/)
 - GIT e GIThub
-- [SUPABASE] (https://supabase.com/) # instalamos a biblioteca em paython pelo comando pip install supabase
+- [SUPABASE](https://supabase.com/) # instalamos a biblioteca em paython pelo comando pip install supabase
 
 ---
 
