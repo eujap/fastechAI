@@ -26,6 +26,7 @@ O agente coleta de forma amigável as seguintes informações:
 - Python 3.12+
 - [Google ADK](https://google.github.io/adk-docs/)
 - GIT e GIThub
+- [SUPABASE] (https://supabase.com/) # instalamos a biblioteca em paython pelo comando pip install supabase
 
 ---
 
@@ -34,7 +35,8 @@ O agente coleta de forma amigável as seguintes informações:
 ```bash
 FASTECHAI/
 ├── multi_tool_agent
-│   ├── agent.py                  
+│   ├── agent.py         
+|   ├── db.py   
 ├── .env                    # criado pelo comando touch multi_tool_agent/.env
 ├── .gitignore              # criado pelo comando pipx run ignr -p python > .gitignore
 ├── requirements.txt        # Dependências do projeto criado pelo comando pip freeze > requirements.txt
