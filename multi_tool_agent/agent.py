@@ -1,7 +1,7 @@
 from google.adk.agents import Agent
 from multi_tool_agent.db import supabase
 from datetime import datetime
-
+from .agent_certificados import agent_certificados
 
 def cadastrar_usuario(nome: str, telefone: str, email: str, rga: str, curso: str) -> dict:
     """
@@ -112,7 +112,7 @@ root_agent = Agent(
         após cadastrar o aluno, passe para o agent de cadastrar certificados
         """
     ),
-
+    sub_agents=[agent_certificados],
     tools=[
         cadastrar_usuario,
         listarcursos,

@@ -4,7 +4,7 @@ from datetime import datetime
 
 
 
-def cadastrar_certificado(nome_certificado: str, carga_horaria: int, email: str, nome_instituicao: str, id_curso: int, id_aluno: int) -> dict:
+def cadastrar_certificado(nome_certificado: str, carga_horaria_certificado: int, email: str, nome_instituicao: str, id_curso: int, id_aluno: int) -> dict:
     """
     Cadastra um novo certificado no banco de dados Supabase.
 
@@ -21,10 +21,10 @@ def cadastrar_certificado(nome_certificado: str, carga_horaria: int, email: str,
     """
     try:
         response = (
-            supabase.table("certificados")
+            supabase.table("certificaddos")
             .insert({
                 "nome_certificado": nome_certificado,
-                "carga_horaria": carga_horaria,
+                "carga_horaria": carga_horaria_certificado,
                 "email": email,
                 "nome_instituicao": nome_instituicao,
                 "id_curso": id_curso,
